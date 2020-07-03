@@ -27,6 +27,16 @@
 // std::cout lives in the iostream library
 #include <iostream>
 
+int multBy2()
+{
+    std::cout << "\nEnter an integer: ";
+    int num = {0};
+    std::cin >> num;
+    std::cout << num * 2 << "\n";
+
+    return 0;
+}
+ 
 int main()
 {
     /* 1.2 comments - Writes to the console.
@@ -88,9 +98,9 @@ int main()
     // define variable x to hold user input (and zero-initialize it)
     int x{ };
     std::cin >> x; 
-    std::cout << "I guessed you would enter " << x << " and you did.\n";
+    std::cout << "I guessed you would enter " << x << " and you did.";
     std::cin >> x;
-    std::cout << "and then i also guessed you would reply '" << x << "' also.";
+    std::cout << "and then i also guessed you would reply '" << x << "' also.\n";
     
 //There’s some debate over whether it’s necessary to initialize a variable immediately before you
 //give it a user provided value via another source (e.g. std::cin), since the user-provided value
@@ -111,8 +121,9 @@ int main()
 // Math Operators: addition(+), subtraction(-), multiplication(*), and division(/).
 // assignment (=) equality operators (==).
 // << (insertion) and >> (extraction). 
-// 
+// BIMDAS math priority - Brackets,Indicies,Mult,Div,Add,Sub
+// Values calculated in an expression are discarded at the end of the expression.
   
+// task1 - multiply a given num by 2
+    multBy2();
 }
-
-
