@@ -18,35 +18,35 @@
         Run program         :   Ctrl + F5
     
     # Editing
-        Comment Section     :   Crtl + C/Q 
+        Comment Section     :   Crtl + K/C 
         Uncomment Section   :   Crtl + K/U
-
-        
+                
         */
 
 // std::cout lives in the iostream library
 #include <iostream>
 
-int multBy2()
+// procedure for task 1.    Take one prameter and multiply it by two
+int multBy2(int num)
 {
-    std::cout << "\nEnter an integer: ";
-    int num = {0};
-    std::cin >> num;
-    std::cout << num * 2 << "\n";
-
-    return 0;
+    return num*2;
 }
  
-int main()
+int sub(int x, int y)
+{
+    return x - y;
+}
+
+
+int m_main()
 {
     /* 1.2 comments - Writes to the console.
     Single lined Comments + New Line with \n. */
-    // std::cout << "Hello World!\n";
+    std::cout << "Hello World!\n";
 
     /* 1.3 variables 
 
     This tells the compiler that 'x' is a int. */
-
     // int a;
 
     // double initialization
@@ -98,9 +98,9 @@ int main()
     // define variable x to hold user input (and zero-initialize it)
     int x{ };
     std::cin >> x; 
-    std::cout << "I guessed you would enter " << x << " and you did.";
+    std::cout << "I guessed you would enter " << x << " and you did. ";
     std::cin >> x;
-    std::cout << "and then i also guessed you would reply '" << x << "' also.\n";
+    std::cout << "and then i also guessed you would reply '" << x << "' also. \n";
     
 //There’s some debate over whether it’s necessary to initialize a variable immediately before you
 //give it a user provided value via another source (e.g. std::cin), since the user-provided value
@@ -125,5 +125,6 @@ int main()
 // Values calculated in an expression are discarded at the end of the expression.
   
 // task1 - multiply a given num by 2
-    multBy2();
+    multBy2(x);
+    return 0;
 }
